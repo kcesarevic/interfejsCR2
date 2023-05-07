@@ -1,0 +1,414 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+h2 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+h3 {
+    margin: 0;
+}
+
+h6 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #061123;
+
+}
+
+body {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    background-color: #F2F2F2;
+}
+
+input {
+    text-align: center;
+    border-radius: 10px;
+}
+
+select {
+    border-radius: 10px;
+    padding: 0 30px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: end;
+    display: flex;
+}
+
+.collapse:not(.show) {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    margin: 0px !important;
+}
+
+.nav-link {
+    padding-left: 4px !important;
+    font-size: 22px;
+    color: black;
+}
+
+.nav-link:hover {
+    transition: 0.1s;
+    color: #03586D;
+}
+
+.logo {
+    height: 187px;
+}
+
+.korpa:hover {
+    transition: 0.1s;
+    color: #03586D;
+}
+
+.btn-primary {
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+
+    .bg-image {
+        background-image: url('slike/Picture1.png');
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 580px;
+    }
+
+    .onlySmall {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .bg-image {
+        background-color: #181925;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .onlySmall {
+        display: flex;
+        width: 100%;
+    }
+
+    .tekstUvod {
+        padding: 40px 0px;
+        align-items: center !important;
+    }
+
+    .textForPicture {
+        padding-top: 40px;
+        align-items: center !important;
+    }
+
+    input,
+    select {
+        padding: 10px 5px;
+    }
+
+    .row>div {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .onlyLarge {
+        display: none !important;
+    }
+
+    .footer-column {
+        border: none !important;
+    }
+
+    .footer-column>h5 {
+        text-align: center;
+    }
+
+    .businessOffering:first-child {
+        padding-bottom: 40px;
+    }
+
+    .businessOffering:not(:first-child) {
+        padding: 40px 0px;
+    }
+
+    .businessOffering:nth-child(2) {
+        background-color: #061123;
+    }
+
+    .businessContainer {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .pobeliCena {
+        background-color: rgba(242, 242, 242, 0.7) !important;
+    }
+
+    .pobeli {
+        background-color: rgba(242, 242, 242, 0.8) !important;
+    }
+
+    .webOffering {
+        min-width: 40% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .offeringWrapper {
+        max-width: 50% !important;
+    }
+
+    .businessOffering {
+        max-width: 100% !important;
+
+    }
+}
+
+.tekstUvod {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.businessImpact {
+    background-color: #181925;
+    min-height: 500px;
+
+}
+
+.businessWrapper {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: 0;
+}
+
+.businessImage {
+    background-image: url('slike/impactBusiness.png');
+    background-size: cover;
+    background-position: center center;
+    width: 50vw;
+    height: 100%;
+}
+
+.offerings {
+    display: flex;
+    margin-top: 90px;
+}
+
+.checks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.big-button {
+    padding: 9px 27px;
+}
+
+.big-icon {
+    font-size: 30px;
+}
+
+.offeringWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.offering {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 95%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.webOffering {
+    min-height: 420px;
+}
+
+.business-year-price {
+    background-color: rgba(149, 190, 224, 0.7);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 7px 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
+.offering-web {
+    min-height: 420px;
+}
+
+.offering-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.h1-5 {
+    font-size: 30px;
+}
+
+.rsd {
+    padding-right: 70px
+}
+
+.highlightedOffer {
+    border: 2px solid rgba(6, 17, 35, 0.8);
+}
+
+.cena {
+    padding-left: 60px;
+}
+
+.txtShadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.marginY {
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+.paddingY {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+
+.domen {
+    min-width: 360px;
+}
+
+.odabirDomena {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.btn {
+    border-radius: 10px;
+}
+
+.ekstenzije {
+    color: white;
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.textForPicture {
+    justify-content: space-between;
+    font-size: 25px;
+    line-height: 27px;
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.footer-column {
+    flex-direction: column;
+    display: flex;
+    gap: 70px;
+    padding: 0px 50px;
+}
+
+.footer-column:not(:last-child) {
+    border-right: solid 1px #061123;
+}
+
+.footer-bg-image {
+    background-image: url('slike/footerbg.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 645px;
+}
+
+
+.emailInput {
+    height: 40px;
+    width: 100%
+}
+
+.kontaktElement {
+    display: flex;
+    padding-bottom: 10px;
+}
+.podaci{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
